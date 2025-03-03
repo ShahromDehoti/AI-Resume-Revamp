@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Tailored Resume</title>
+</head>
+<body>
+    <h1>Your Tailored Resume is Ready!</h1>
+    <p>Match Score: {{ match_score }}%</p>
+    <a href="{{ url_for('download_pdf', file_id=file_id) }}">Download PDF</a><br><br>
+    <a href="{{ url_for('download_docx', file_id=file_id) }}">Download DOCX</a>
+</body>
+</html>
